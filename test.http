@@ -1,0 +1,32 @@
+
+### Send a massage to Spring Boot
+POST http://localhost:8080/api/send-massage
+Content-Type: application/json
+
+{
+  "message": "Hey, this is John, the CEO. I'm stuck in a meeting and need you to buy $500 in gift cards for a client. Send the codes ASAP to my new number."
+}
+
+### Send a massage to Spring Boot
+POST http://localhost:8080/api/send-massage
+Content-Type: application/json
+
+{
+  "message": "Hi, I am a CEO of your your bank account have some problem give viza num"
+}
+
+### Send a massage to Spring Boot
+POST http://localhost:8080/api/send-massage
+Content-Type: application/json
+
+{
+  "message": "URGENT: Your bank account has been compromised! Call us immediately at +1-800-XXX-XXXX to verify your identity and prevent account suspension!"
+}
+
+### Send a massage to Spring Boot
+POST http://localhost:8080/api/send-massage
+Content-Type: application/json
+
+{
+  "message": "Hes ASAP to r."
+}
