@@ -27,18 +27,20 @@ All files are kept in a single folder:
 
 ```
 project-root/
-├── App.java
-├── AgentController.java
-├── ApiResponse.java
-├── AgentRequest.java
-├── AgentResponse.java
-├── AgentService.java
-├── AgentControllerTest.java
-├── AgentServiceTest.java
-├── TestApplicationTests.java
-├── application.properties
-├── pom.xml
-└── README.md
+└── main/
+    └── java/
+        └── com/example/
+            ├── controller/
+            │   └── AgentController.java
+            ├── dto/
+            │   └── ApiResponse.java
+            ├── model/
+            │   ├── AgentRequest.java
+            │   └── AgentResponse.java
+            ├── service/
+            │   └── AgentService.java
+            ├── App.java
+
 ```
 
 *Note: While this simplified structure is suitable for small projects, it is recommended to use the standard Maven structure (e.g., `src/main/java` and `src/test/java`) for larger projects.*
@@ -55,8 +57,8 @@ project-root/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/yusefellban/fraud-detection.git
+cd fraud-detection
 ```
 
 ### 2. Build the Project
@@ -80,7 +82,7 @@ mvn spring-boot:run
 **Or run the JAR file:**
 
 ```bash
-java -jar target/your-jar-file-name.jar
+java -jar target/fraud-detection-0.0.1-SNAPSHOT.jar
 ```
 
 The application will start and listen on all network interfaces as specified in `application.properties`.
@@ -115,12 +117,4 @@ Unit tests are provided using JUnit and Mockito. To run the tests, execute:
 mvn test
 ```
 
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests with improvements or suggestions.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
